@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">proyectoPrograMovil</string>
+    <string name="tituloIngresar">Ingresar al sistema</string>
+    <string name="ingresarNombre">Nombre de usuario</string>
+    <string name="ingresaContra">Contraseña</string>
+    <string name="btnIngresarSistema">INGRESAR</string>
+    <string name="crearTitulo">Crear usuario</string>
+    <string name="crearNombre">Nombre completo</string>
+    <string name="crearEmail">Email</string>
+    <string name="crearCelular">Celular</string>
+    <string name="crearDomicilio">Domicilio</string>
+    <string name="crearNombreUsuario">Nombre de usuario</string>
+    <string name="crearContra">Contraseña</string>
+    <string name="crearRepiteContra">Repite tu contraseña</string>
+    <string name="crearbtn">Crear usuario</string>
 </resources>

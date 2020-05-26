@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    tools:context=".quienes_somos">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:layout_marginTop="16dp"
+                android:text="¿Quiénes somos?"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="45sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="128dp"
+                android:layout_height="127dp"
+                android:layout_marginBottom="0dp"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:padding="10dp"
+                android:text=" Esta aplicación fue desarrollada por un grupo de \nestudiantes de tercer semestre de la materia  de Programación Móvil I de la Universidad del Valle.\n
+         Fundada el 4 de Octubre de 1988 por el Dr. Gonzalo \nRuiz Martinez; Univalle se ha proyectado como\n sinónimo de excelencia académica a nivel Latinoamérica \ncon más
+ de 32 carreras a nivel de Licenciatura."
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <VideoView
+                android:id="@+id/video_view"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/facu" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

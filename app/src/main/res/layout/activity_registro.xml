@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/fondo"
+    tools:context=".registro">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="#FFF"
+        android:text="@string/crearTitulo"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/etRegNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:hint="@string/crearNombre"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etRegEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:hint="@string/crearEmail"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etRegCelular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:hint="@string/crearCelular"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etRegDomicilio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:hint="@string/crearDomicilio"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etRegNombreUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:hint="@string/crearNombreUsuario"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etRegContra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:hint="@string/crearContra"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/etRegRepContra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:hint="@string/crearRepiteContra"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnRegUsuario"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_registro"
+        android:text="@string/crearbtn" />
+</LinearLayout>

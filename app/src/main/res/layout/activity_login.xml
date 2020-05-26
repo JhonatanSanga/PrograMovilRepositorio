@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/fondo"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/tituloIngresar"
+        android:textColor="#FFF"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/etNombreUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#FFF"
+        android:hint="@string/ingresarNombre"
+        android:textColorHint="#FFF"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etContraUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:hint="@string/ingresaContra"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnIngresarSis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@drawable/btn_registro"
+        android:text="@string/btnIngresarSistema" />
+
+    <TextView
+        android:id="@+id/tvRespuesta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="..."
+        android:textColor="#FFF"
+        android:textSize="24sp" />
+</LinearLayout>

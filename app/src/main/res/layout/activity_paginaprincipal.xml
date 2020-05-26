@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondo"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="220dp"
+            android:layout_height="221dp"
+            android:layout_marginBottom="70dp"
+            android:src="@drawable/logo" />
+
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_registro"
+            android:elevation="5dp"
+            android:text="Ingresar al sistema"
+            android:textColor="#403f3f"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btn_quienes_somos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_registro"
+            android:elevation="5dp"
+            android:text="Quienes somos"
+            android:textAllCaps="false"
+            android:textColor="#403f3f"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btn_registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_registro"
+            android:elevation="5dp"
+            android:text="Registro"
+            android:textColor="#403f3f"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
