@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Base64;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,6 +12,12 @@ import android.widget.Toast;
 
 import com.example.proyectoprogramovil.Modelo.Estudiante;
 import com.example.proyectoprogramovil.controllers.EstudianteController;
+
+import java.security.MessageDigest;
+
+import javax.crypto.Cipher;
+import javax.crypto.SecretKey;
+import javax.crypto.spec.SecretKeySpec;
 
 public class registro extends AppCompatActivity {
 
@@ -85,6 +92,7 @@ public class registro extends AppCompatActivity {
                         etRegRepContra.requestFocus();
                         return;
                     }
+                    SRepContra=encriptar(SContra);
                     est = new Estudiante(SNombre,SEmail,SNombreUsuario,SRepContra,SDireccion,STelefono);
                     long creado=estudianteController.nuevoEstudiante(est);
                     if(creado==-1){
@@ -102,5 +110,21 @@ public class registro extends AppCompatActivity {
                 }
             }
         });
+    }
+    private String encriptar (String Scontra) throws Exception{
+        SecretKeySpec secretKey=generateKey(Scontra);
+        Cipher cipher=Cipher.getInstance("AES");
+        cipher.init(Cipher.ENCRYPT_MODE,secretKey);
+        byte[] datosEncriptadosByte=cipher.doFinal(Scontra.getBytes());
+        String datosEncriptados= Base64.encodeToString(datosEncriptadosByte,Base64.DEFAULT);
+        return datosEncriptados;
+    }
+    private SecretKeySpec generateKey(String contra) throws Exception
+    {
+        MessageDigest sha=MessageDigest.getInstance("SHA-256");
+        byte[] key=contra.getBytes("UTF-8");
+        key=sha.digest(key);
+        SecretKeySpec secretKey=new SecretKeySpec(key,"AES");
+        return secretKey;
     }
 }
