@@ -2,6 +2,7 @@ package com.example.proyectoprogramovil;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -53,6 +54,8 @@ public class login extends AppCompatActivity {
                             if(usuario.equals(usuarioLeido) && contra.equals(contraLeida)){
                                 m="INGRESASTE CON EXITO :D";
                                 tvMensaje.setText(m);
+                                Intent intent=new Intent(getApplicationContext(),estudiantes.class);
+                                startActivity(intent);
                             }
                         }while(c.moveToNext());
                         if(m.equals("")){

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".registro"></activity>
+        <activity android:name=".estudiantes"></activity>
+        <activity android:name=".registro" />
         <activity android:name=".quienes_somos" />
         <activity android:name=".login" />
         <activity android:name=".paginaprincipal" />

@@ -20,7 +20,9 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void run() {
             SystemClock.sleep(2000);
-            Intent intent=new Intent(getApplicationContext(),paginaprincipal.class);
+            /*Intent intent=new Intent(getApplicationContext(),paginaprincipal.class);
+            startActivity(intent);*/
+            Intent intent=new Intent(getApplicationContext(),estudiantes.class);
             startActivity(intent);
         }
     }
