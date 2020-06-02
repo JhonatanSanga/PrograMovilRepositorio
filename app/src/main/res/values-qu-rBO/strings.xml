@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">proyectoPrograMovil</string>
     <string name="tituloIngresar">Ingresar al sistema</string>
@@ -15,11 +16,11 @@
     <string name="crearbtn">Crear usuario</string>
 
 
-    <string name="tituloEstudiantes">REGISTRAR ESTUDIANTE</string>
-    <string name="fechaRegistro">Fecha</string>
-    <string name="nombreRegistro">Nombre</string>
-    <string name="carreraRegistro">Carrera</string>
-    <string name="temperaturaRegistro">Temperatura</string>
-    <string name="btnRegistrarE">REGISTRAR ESTUDIANTE</string>
 
+    <string name="tituloEstudiantes">YACHAKUKTA QHELQENA</string>
+    <string name="fechaRegistro">P unchaw</string>
+    <string name="nombreRegistro">Suti</string>
+    <string name="carreraRegistro">Imata yachakun</string>
+    <string name="temperaturaRegistro">K ajay</string>
+    <string name="btnRegistrarE">YACHAKUKTA QHELQENA</string>
 </resources>

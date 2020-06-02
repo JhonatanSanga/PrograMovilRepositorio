@@ -54,7 +54,7 @@ public class login extends AppCompatActivity {
                             if(usuario.equals(usuarioLeido) && contra.equals(contraLeida)){
                                 m="INGRESASTE CON EXITO :D";
                                 tvMensaje.setText(m);
-                                Intent intent=new Intent(getApplicationContext(),estudiantes.class);
+                                Intent intent=new Intent(getApplicationContext(),menu.class);
                                 startActivity(intent);
                             }
                         }while(c.moveToNext());

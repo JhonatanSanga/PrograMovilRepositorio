@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -38,6 +39,8 @@ public class estudiantes extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //mostrar Registrar Estudiantes
+                Intent intent=new Intent(getApplicationContext(),RegistrarEstudiantes.class);
+                startActivity(intent);
             }
         });
 
@@ -61,7 +64,7 @@ public class estudiantes extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "CARGADO", Toast.LENGTH_SHORT).show();
 
             //separar registros
-            String[] a=s.split("-");
+            String[] a=s.split("/");
             //dar formato a los datos
 
             ArrayList<String> listaDatos;
@@ -103,7 +106,7 @@ public class estudiantes extends AppCompatActivity {
                         s += leidoString;
                     }
 
-                    String[] a=s.split("-");
+                    String[] a=s.split("/");
                     String[] estDatos=new String[a.length-1];
                     ArrayList<String> listaDatos;
                     listaDatos = new ArrayList<String>();
@@ -135,6 +138,9 @@ public class estudiantes extends AppCompatActivity {
                 //archivo existe
                 Toast.makeText(getApplicationContext(), "El archivo existe", Toast.LENGTH_SHORT).show();
                 existe=true;
+
+                //descomentar y ejecutar para dejar el archivo txt en blanco
+
                 /*try {
                     FileOutputStream fileOutputStream=openFileOutput(NOMBRE_ARCHIVO,MODE_PRIVATE);
                     OutputStreamWriter outputStreamWriter= new OutputStreamWriter(fileOutputStream);
@@ -154,13 +160,6 @@ public class estudiantes extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Archivo creado con exito", Toast.LENGTH_SHORT).show();
 
 
-
-
-                //fechaActual, SIU, Nombre, Carrera, Temperatura
-                String estudiante="2020/05/30,JSB2019949,Jhona,ISI,28"+"-";
-                outputStreamWriter.write(estudiante+"\n");
-                outputStreamWriter.flush();
-                outputStreamWriter.close();
 
             }catch(Exception ex){
                 Toast.makeText(getApplicationContext(), ex.getMessage(), Toast.LENGTH_SHORT).show();

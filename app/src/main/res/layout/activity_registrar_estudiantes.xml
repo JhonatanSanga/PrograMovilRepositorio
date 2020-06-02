@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondo"
+    android:layout_height="match_parent"
+    tools:context=".RegistrarEstudiantes">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="98dp"
+                    android:layout_height="103dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="268dp"
+                    android:layout_height="93dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/tituloEstudiantes"
+                    android:textColor="#FFF"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+            <EditText
+                android:id="@+id/etRegSiu"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginTop="28dp"
+                android:background="#5E2D4F"
+                android:ems="10"
+                android:hint="SIU"
+                android:inputType="textPersonName"
+                android:textColor="#FFF"
+                android:textColorHint="#C2A0CE"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.481"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <EditText
+                android:id="@+id/etRegNombreEstudiante"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginTop="10dp"
+                android:background="#5E2D4F"
+                android:ems="10"
+                android:hint="@string/nombreRegistro"
+                android:inputType="textPersonName"
+                android:textColor="#FFF"
+                android:textColorHint="#C2A0CE" />
+
+            <EditText
+                android:id="@+id/etRegCarrera"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginTop="10dp"
+                android:background="#5E2D4F"
+                android:ems="10"
+                android:hint="@string/carreraRegistro"
+                android:inputType="textPersonName"
+                android:textColor="#FFF"
+                android:textColorHint="#C2A0CE" />
+
+            <EditText
+                android:id="@+id/etRegTemperatura"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginTop="10dp"
+                android:background="#5E2D4F"
+                android:ems="10"
+                android:hint="@string/temperaturaRegistro"
+                android:inputType="textPersonName"
+                android:textColor="#FFF"
+                android:textColorHint="#C2A0CE" />
+
+
+
+            <Button
+                android:id="@+id/btnRegEstudiante"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_registro"
+                android:text="@string/btnRegistrarE"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,7 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:background="#00BCD4"
+            android:background="@color/colorPrimary"
             android:layout_margin="3dp"
             >
 
@@ -34,11 +34,12 @@
                     android:id="@+id/tvElemento"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:textColor="#FFFFFF"
                     android:text="TextView" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:background="#000000"/>
+                    android:background="#FFFFFF"/>
 
                 <ImageView
                     android:id="@+id/imageView2"

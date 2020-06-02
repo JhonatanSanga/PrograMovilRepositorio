@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">proyectoPrograMovil</string>
+    <string name="tituloIngresar">Enter the system</string>
+    <string name="ingresarNombre">User name </string>
+    <string name="ingresaContra">Password</string>
+    <string name="btnIngresarSistema">ENTER</string>
+    <string name="crearTitulo">Create user</string>
+    <string name="crearNombre">Full name</string>
+    <string name="crearEmail">Email</string>
+    <string name="crearCelular">Mobile</string>
+    <string name="crearDomicilio">Home address</string>
+    <string name="crearNombreUsuario">User name </string>
+    <string name="crearContra">Password</string>
+    <string name="crearRepiteContra">Confirm password</string>
+    <string name="crearbtn">Create user</string>
+
+
+
+
+    <string name="tituloEstudiantes">REGISTER STUDENT</string>
+    <string name="fechaRegistro">Date</string>
+    <string name="nombreRegistro">Name</string>
+    <string name="carreraRegistro">University Career</string>
+    <string name="temperaturaRegistro">Temperature</string>
+    <string name="btnRegistrarE">REGISTER STUDENT</string>
+</resources>

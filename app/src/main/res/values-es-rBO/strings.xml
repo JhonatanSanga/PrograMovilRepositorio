@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">proyectoPrograMovil</string>
     <string name="tituloIngresar">Ingresar al sistema</string>
@@ -21,5 +22,4 @@
     <string name="carreraRegistro">Carrera</string>
     <string name="temperaturaRegistro">Temperatura</string>
     <string name="btnRegistrarE">REGISTRAR ESTUDIANTE</string>
-
 </resources>
